@@ -1,11 +1,11 @@
 ---
-name: 'Get Latest Release'
+name: gitea-action-get-latest-release
 description: >-
-  Get the latest release from another repository and output that for use in 
+  Get the latest release from your own another gitea repository and output that for use in 
   other actions
 branding:
-  icon: 'anchor'
-  color: 'orange'
+  icon: package
+  color: random
 inputs:
   serverUrl:
     description: the Url of the gitea API
@@ -26,5 +26,5 @@ outputs:
   description:
     description: 'Latest release description body'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
