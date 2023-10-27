@@ -5,7 +5,7 @@ description: >-
   other actions
 branding:
   icon: package
-  color: random
+  color: green
 inputs:
   serverUrl:
     description: the Url of the gitea API
