@@ -1,0 +1,38 @@
+{
+  "name": "gitea-action-get-latest-release",
+  "version": "0.0.1",
+  "description": "A simple action to get the latest release from a gitea repo.",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint main.js",
+    "package": "ncc build main.js -o dist",
+    "build": "ncc build main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigyl-actions/gitea-action-get-latest-release.git"
+  },
+  "keywords": [
+    "actions",
+    "latest",
+    "release"
+  ],
+  "bugs": {
+    "url": "https://github.com/sigyl-actions/gitea-action-get-latest-release/issues"
+  },
+  "homepage": "https://github.com/sigyl-actions/gitea-action-get-latest-release#readme",
+  "author": "Pozetron Inc",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@octokit/rest": "^19.0.5",
+    "cross-fetch": "^4.0.0",
+    "gitea-js": "^1.20.1"
+  }
+}
