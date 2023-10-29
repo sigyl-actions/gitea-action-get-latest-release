@@ -41,7 +41,9 @@ async function run() {
       core.setOutput('description', String(releases[0].body));
       // core.setOutput('releases', releases);
     } else {
-      core.setFailed("No valid releases");
+      core.setOutput('release', null);
+      core.setOutput('id', null);
+      core.setOutput('description', null);
     }
   }
   catch (error) {
