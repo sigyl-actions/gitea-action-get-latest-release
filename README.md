@@ -8,8 +8,6 @@ based on https://github.com/pozetroninc/github-action-get-latest-release.git
 Configuration
 =============
 
-Example Repository - https://github.com/pozetroninc/github-action-get-latest-release
-
 **Inputs**
 
 Name | Description | Example
