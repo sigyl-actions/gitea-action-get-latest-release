@@ -15423,8 +15423,7 @@ async function run() {
   try {    
     const api = new giteaApi(
       core.getInput('serverUrl')
-        || (github.context.runId && github.context.serverUrl)
-        || 'https://gitea.com/',
+        || (github.context.runId && github.context.serverUrl),
       {
         token: core.getInput('token'),
         customFetch: fetch,
@@ -15433,8 +15432,7 @@ async function run() {
     
     const [owner, repo] = (
       core.getInput('repository')
-        || github.context.repository
-        || 'gitea/tea'
+        || github.context.payload.repository.full_name
     ).split("/");
 
     const releases = (
